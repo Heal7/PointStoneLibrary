@@ -1,0 +1,138 @@
+/**index.wxss**/
+
+page {
+  background-color: #f5f5f9;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin-top: 102rpx;
+  display: block;
+  font-family: "微软雅黑";
+  font-size: 36rpx;
+}
+
+.search-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 17rpx 0 10rpx;
+  background-color: #9866ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.search-box view {
+  color: #fff;
+  background-color: #ae85ff;
+  padding: 10rpx 14rpx 4rpx;
+  border-radius: 10rpx;
+}
+
+.search-box view .tag{
+  width:45rpx;
+  height:45rpx;
+}
+
+.search-box view .camera{
+  width:50rpx;
+  height:45rpx;
+}
+
+
+.search-input {
+  width: 470rpx;
+  height: 60rpx;
+  line-height: 65rpx;
+  background-color: #f2f2f2;
+  border-radius: 20rpx;
+  padding-left: 20rpx;
+}
+
+
+.tag-box {
+  box-shadow: 8rpx 8rpx 8rpx #dedee0;
+  display: none;
+  position: fixed;
+  max-height: 660rpx;
+  overflow: scroll;
+  top: 102rpx;
+  left: 0rpx;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.tagShow {
+  display: block;
+}
+
+.tag-list {
+  margin: 20rpx 30rpx;
+  margin-top: 40rpx;
+}
+
+.tag-list view {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #9866ff;
+  padding: 12rpx 20rpx 10rpx;
+  font-size: 34rpx;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  margin-right: 30rpx;
+}
+
+.tag-img {
+  text-align: center;
+  border-top: 1rpx solid #dbd8d3;
+}
+
+.tag-img image {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 10rpx auto;
+}
+
+.book-list {
+  padding: 35rpx 30rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+  background-color:#fff;
+}
+
+.book-list .title {
+  width: 400rpx;
+  line-height: 32px;
+}
+
+.book-list .author {
+  width: 400rpx;
+  font-size: 32rpx;
+  color: #aeaeae;
+  margin-top: 20rpx;
+}
+
+.book-list .status {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+
+.book-list image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.cyan {
+  color: #33ccff;
+}
+
+.yellow {
+  color: #ffcc66;
+}

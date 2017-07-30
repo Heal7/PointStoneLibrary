@@ -1,0 +1,20 @@
+<view class="container">
+  <block wx:for="{{records}}" wx:for-item="record" wx:key="objectId">
+    <view class="record-list" data-bookid="{{record.bookID}}" bindtap="showDetail">
+      <view class="name">
+        <view>书名</view>
+        <view>{{record.bookName}}</view>
+      </view>
+      <view class="borrow-date">
+        <view>借阅日期</view>
+        <view>{{record.borrowDate}}</view>
+      </view>
+      <view class="back-date">
+        <view>归还日期</view>
+        <view>{{record.returnDate}}</view>
+      </view>
+      <view class="hint">详细信息</view>
+    </view>
+  </block>
+  <view wx-if="{{showEmpty}}" class="empty">没有借阅历史记录</view>
+</view>

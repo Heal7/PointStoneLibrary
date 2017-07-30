@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search-box">
+    <view bindtap="toggleTag"><image class="tag" src="/images/tag.png"></image></view>
+    <view><image class="camera" src="/images/camera.png" bindtap="scan"></image></view>
+    <input class="search-input" type="text" bindinput="input" value="{{defaultInputValue}}" />
+  </view>
+  <div class="tag-box  {{tagShow?'tagShow':''}}">
+    <view class="tag-list">
+      <block wx:for="{{tags}}" wx:for-item="tag">
+        <view bindtap="tagName" data-tagname="{{tag}}">{{tag}}</view>
+      </block>
+    </view>
+    <view class="tag-img" bindtap="toggleTag">
+      <image src="/images/up3.png"></image>
+    </view>
+  </div>
+  <block wx:for="{{books}}" wx:for-item="book" wx:key="{{objectId}}">
+    <view data-bookid="{{book.objectId}}" class="book-list" bindtap="showDetail">
+      <view class="title">{{book.data.title}}</view>
+      <image src="/images/enter.png"></image>
+      <view class="author">作者：{{book.data.info.author}}</view>
+      <view wx:if="{{book.data.status == 2}}">
+        <view class="status yellow">状态：丢失</view>
+      </view>
+      <view wx:if="{{book.data.status == 0}}">
+        <view class="status cyan">状态：可借</view>
+      </view>
+      <view wx:else="{{book.data.status==1}}">
+        <view class="status yellow">状态：不可借</view>
+      </view>
+    </view>
+  </block>
+  <view wx-if="{{showEmpty}}" class="empty">暂无</view>
+</view>

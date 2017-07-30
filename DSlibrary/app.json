@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/checkin/checkin",
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/me/me",
+    "pages/me/borrowing/borrowing",
+    "pages/me/record/record",
+    "pages/me/addbook/addbook"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9866ff",
+    "navigationBarTitleText": "点石小书库",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ae85ff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/book.png",
+      "selectedIconPath": "images/book_cur.png",
+      "text":"书架"
+    }, {
+      "pagePath": "pages/me/me",
+      "iconPath": "images/me2.png",
+      "selectedIconPath": "images/me2_cur.png",
+      "text":"我"
+    }]
+  }
+}

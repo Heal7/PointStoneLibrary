@@ -1,0 +1,24 @@
+<!--pages/index/detail/detail.wxml-->
+<view class="book-detail">
+  <view class="title">{{book.title}}</view>
+  <view class="author">作者：{{book.info.author}}</view>
+  <view class="publisher">出版社：{{book.info.publisher}}</view>
+  <view class="pubdate">出版日期：{{book.info.pubdate}}</view>
+  <view wx:if="{{book.status == 0}}">
+    <view class="status cyan">状态：可借</view>
+  </view>
+  <view wx:elif="{{book.status == 1}}">
+    <view class="status yellow">状态:{{book.nowOwnerName}}借阅中</view>
+  </view>
+  <view wx:else>
+    <view class="status yellow">状态:丢失</view>
+  </view>
+  <view>
+    <view>内容简介：</view>
+    <view class="intro">{{book.info.summary}}</view>
+  </view>
+</view>
+<button wx:if="{{book.status == 0}}" class="borrow" bindtap="borrow">借书</button>
+<button wx:elif="{{book.nowOwner== userID}}" class="return" bindtap="returnBook">还书</button>
+<button wx:elif="{{(book.status == 1) && (book.nowOwner!==userID)}}" class="wait">等待归还</button>
+<button wx:else="{{book.status == 2}}" class="wait">已丢失</button>

@@ -1,0 +1,9 @@
+<!--pages/checkin/checkin.wxml-->
+<view class="top">
+  <view class="checkin-title">请登录</view>
+</view>
+<view class="checkin-info">
+  <input class="input-name" name="inputName" bindinput="nameInput" placeholder="输入姓名" />
+  <input class="input-phone" name="inputPhone" bindinput="phoneInput" placeholder="输入手机号" />
+  <button class="btn-checkin" bindtap="checkIn">进入小书库</button>
+</view>

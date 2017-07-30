@@ -1,0 +1,34 @@
+/* pages/checkin/checkin.wxss */
+
+page {
+  font-size: 38rpx;
+}
+
+.top {
+  text-align: center;
+  height: 100rpx;
+  margin: 40rpx auto
+}
+
+.top image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.checkin-info {
+  padding: 10rpx 40rpx;
+}
+
+.checkin-info input {
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  margin-bottom: 30rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  padding: 0 20rpx;
+}
+
+.btn-checkin {
+  background-color: #9866ff;
+  color: #fff;
+}

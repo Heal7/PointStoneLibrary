@@ -1,0 +1,21 @@
+<!--pages/me/borrowing/borrowing.wxml-->
+<view class="container">
+  <block wx:for="{{myBooks}}" wx:for-item="myBook" wx:key="objectId">
+    <view class="myBook-list" data-bookid="{{myBook.objectId}}" bindtap="showDetail">
+      <view class="name">
+        <view>书　　名</view>
+        <view>{{myBook.data.title}}</view>
+      </view>
+      <view class="borrow-date">
+        <view>借阅日期</view>
+        <view>{{myBook.data.borrowDate}}</view>
+      </view>
+      <view class="time">
+        <view>已借天数</view>
+        <view>{{myBook.data.borrowPeriod}}天</view>
+      </view>
+      <view class="hint">详细信息</view>
+    </view>
+  </block>
+  <view wx-if="{{showEmpty}}" class="empty">没有在借书籍</view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="avatar"><image src="{{userInfo.avatarUrl}}"></image></view>
+  <view class="greet">你好！{{name}}</view>
+  <view class="info">
+    <view bindtap="showBorrowing">
+      <view>正在借阅</view>
+      <image src="/images/me_enter.png"></image>
+    </view>
+    <view bindtap="showRecord">
+      <view>借阅记录</view>
+      <image src="/images/me_enter.png"></image>
+    </view>
+    <view bindtap="addBook">
+      <view>扫描入库</view>
+      <image src="/images/me_enter.png"></image>
+    </view>
+    <view bindtap="bindLogout">
+      <view>退出登录</view>
+      <image src="/images/me_enter.png"></image>
+    </view>
+  </view>
+</view>

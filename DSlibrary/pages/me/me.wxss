@@ -1,0 +1,50 @@
+/* pages/me/me.wxss */
+
+page {
+  background-color: #f5f5f9;
+}
+
+.container {
+  font-family: "微软雅黑";
+  font-size: 38rpx;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.avatar{
+   text-align: center;
+   margin:40rpx auto;
+}
+.avatar image{
+    width:164rpx;
+    height:164rpx;
+    border-radius: 50%;
+}
+.greet {
+  text-align: center;
+  font-size: 36rpx;
+  margin-top: 36rpx;
+}
+
+.info image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.info {
+  margin-top: 60rpx;
+  background-color: #fff;
+  border-top: 1px solid #dbd8d3;
+  color: #6b6b6b;
+}
+
+.info>view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28rpx 40rpx;
+}
+
+.info>view {
+  border-bottom: 1px solid #dbd8d3;
+}

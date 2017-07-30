@@ -1,0 +1,20 @@
+<!--pages/storage/storage.wxml-->
+<view class="container">
+  <view class="title">书名</view>
+  <input value="{{info.title}}" />
+  <view class="title">作者</view>
+  <input value="{{info.author}}" />
+  <view class="title">ISBN</view>
+  <input value="{{info.isbn}}" />
+  <view class="title">出版日期</view>
+  <input value="{{info.pubdate}}" />
+  <view class="title">出版社</view>
+  <input value="{{info.publisher}}" />
+  <view class="title">简介</view>
+  <textarea value="{{info.summary}}"></textarea>
+  <view class="title">请选择标签</view>
+  <picker bindchange="choseTag" value="{{index}}" range="{{tags}}">
+    {{tags[index]}}
+  </picker>
+  <button bindtap="confirmAddBook">确认添加</button>
+</view>

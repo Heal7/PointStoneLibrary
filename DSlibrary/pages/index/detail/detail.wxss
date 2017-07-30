@@ -1,0 +1,65 @@
+/* pages/index/detail/detail.wxss */
+
+page {
+  background-color: #f5f5f9;
+  box-sizing: border-box;
+  font-size: 34rpx;
+  height:100%;
+  padding-bottom:90rpx;
+}
+
+.book-detail {
+  margin: 40rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  box-shadow: 8rpx 8rpx 8rpx #dedee0;
+}
+
+.book-detail view {
+  margin-bottom: 15rpx;
+}
+
+.book-detail .title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.author,
+.publisher,
+.pubdate {
+  color: #aeaeae;
+  font-size:34rpx;
+}
+
+.intro {
+  font-size: 30rpx;
+  color: #a1a1a1;
+  line-height: 150%;
+}
+
+button {
+  width: 260rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 20rpx;
+  color: #fff;
+  box-shadow: 5rpx 5rpx 5rpx #c3c3c6;
+  margin-bottom:120rpx;
+}
+
+.borrow,
+.return {
+  background-color: #9966ff;
+}
+
+.wait {
+  background-color: #a1a1a1;
+}
+
+.cyan {
+  color: #33ccff;
+}
+
+.yellow {
+  color: #ffcc66;
+}
